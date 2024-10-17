@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Dashboard" />
+  <ScrollView>
+    <StackLayout class="p-4">
+      <Label text="School Management System" class="text-2xl font-bold mb-4" />
+      <Button text="Students" tap="{{ onStudentsTab }}" class="-primary mb-2" />
+      <Button text="Teachers" tap="{{ onTeachersTab }}" class="-primary mb-2" />
+      <Button text="Attendance" tap="{{ onAttendanceTab }}" class="-primary mb-2" />
+      <Button text="Exams" tap="{{ onExamsTab }}" class="-primary mb-2" />
+      <Button text="Reports" tap="{{ onReportsTab }}" class="-primary mb-2" />
+      <Button text="School Profile" tap="{{ onSchoolProfileTab }}" class="-primary mb-2" />
+    </StackLayout>
+  </ScrollView>
+</Page>

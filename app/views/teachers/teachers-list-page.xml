@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Teachers List">
+    <ActionItem tap="{{ onAddTeacher }}" ios.position="right" android.position="actionBar">
+      <Label text="Add" class="action-label" />
+    </ActionItem>
+  </ActionBar>
+  <ListView items="{{ teachers }}" itemTap="{{ onItemTap }}" class="list-group">
+    <ListView.itemTemplate>
+      <StackLayout class="list-group-item">
+        <Label text="{{ name }}" class="list-group-item-heading" />
+        <Label text="{{ 'ID: ' + teacher_id }}" class="list-group-item-text" />
+      </StackLayout>
+    </ListView.itemTemplate>
+  </ListView>
+</Page>

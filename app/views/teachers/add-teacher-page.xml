@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Add Teacher" />
+  <ScrollView>
+    <StackLayout class="p-4">
+      <TextField hint="Name" text="{{ name }}" class="mb-2" />
+      <TextField hint="Father's Name" text="{{ fatherName }}" class="mb-2" />
+      <TextField hint="Teacher ID" text="{{ teacherId }}" class="mb-2" />
+      <TextField hint="CNIC" text="{{ cnic }}" class="mb-2" />
+      <TextField hint="Religion" text="{{ religion }}" class="mb-2" />
+      <TextField hint="Surname" text="{{ surname }}" class="mb-2" />
+      <Button text="Save Teacher" tap="{{ onSaveTeacher }}" class="-primary" />
+    </StackLayout>
+  </ScrollView>
+</Page>

@@ -1,0 +1,24 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Add Student" />
+  <ScrollView>
+    <StackLayout class="p-4">
+      <TextField hint="Name" text="{{ name }}" class="mb-2" />
+      <TextField hint="Father's Name" text="{{ fatherName }}" class="mb-2" />
+      <TextField hint="GRN" text="{{ grn }}" class="mb-2" />
+      <TextField hint="Religion" text="{{ religion }}" class="mb-2" />
+      <TextField hint="Surname" text="{{ surname }}" class="mb-2" />
+      <TextField hint="Father's CNIC" text="{{ fatherCNIC }}" class="mb-2" />
+      <TextField hint="B-Form Number" text="{{ bFormNumber }}" class="mb-2" />
+      <DatePicker date="{{ dateOfBirth }}" class="mb-2" />
+      <TextField hint="Previous School" text="{{ previousSchool }}" class="mb-2" />
+      <TextField hint="Previous Class" text="{{ previousClass }}" class="mb-2" />
+      <TextField hint="Admitted Class" text="{{ admittedClass }}" class="mb-2" />
+      <TextField hint="Current Class" text="{{ currentClass }}" class="mb-2" />
+      <TextField hint="Village" text="{{ village }}" class="mb-2" />
+      <DatePicker date="{{ dateOfAdmission }}" class="mb-2" />
+      <Button text="Add Picture" tap="{{ onAddPicture }}" class="-outline mb-2" />
+      <Image src="{{ picturePath }}" width="100" height="100" class="mb-4" />
+      <Button text="Save Student" tap="{{ onSaveStudent }}" class="-primary" />
+    </StackLayout>
+  </ScrollView>
+</Page>

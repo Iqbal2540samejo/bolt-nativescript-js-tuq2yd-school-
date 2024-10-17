@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Mark Attendance" />
+  <GridLayout rows="auto, *" class="p-4">
+    <DatePicker row="0" date="{{ selectedDate }}" class="mb-2" />
+    <ListView row="1" items="{{ students }}" class="list-group">
+      <ListView.itemTemplate>
+        <GridLayout columns="*, auto" class="list-group-item">
+          <Label col="0" text="{{ name }}" class="list-group-item-heading" />
+          <Switch col="1" checked="{{ isPresent }}" />
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+  <Button text="Save Attendance" tap="{{ onSaveAttendance }}" class="-primary" />
+</Page>

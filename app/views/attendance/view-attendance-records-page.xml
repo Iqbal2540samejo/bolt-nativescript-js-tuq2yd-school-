@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <ActionBar title="Attendance Records" />
+  <GridLayout rows="auto, *" class="p-4">
+    <DatePicker row="0" date="{{ selectedDate }}" class="mb-2" />
+    <ListView row="1" items="{{ attendanceRecords }}" class="list-group">
+      <ListView.itemTemplate>
+        <GridLayout columns="*, auto" class="list-group-item">
+          <Label col="0" text="{{ name }}" class="list-group-item-heading" />
+          <Label col="1" text="{{ status }}" class="{{ status === 'present' ? 'text-green' : 'text-red' }}" />
+        </GridLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </GridLayout>
+</Page>
